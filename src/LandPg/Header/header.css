@@ -1,0 +1,31 @@
+.Heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .Heading h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .Heading nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Heading nav ul li {
+    margin-right: 10px;
+  }
+  
+  .Heading nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,95 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* added to remove default body margin */
+  padding: 0; /* added to remove default body padding */
+  display: flex; /* added to enable flexbox layout */
+  min-height: 100vh; /* added to enable sticky footer */
+  flex-direction: column; /* added to enable sticky footer */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  flex: 1 0 auto; /* added to enable sticky footer */
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: green;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* added to enable sticky footer */
+@media screen and (max-height: 600px) {
+  footer {
+    position: static;
+  }
+}
+@media screen and (min-height: 601px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/**Landing page component**/
+body {
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+
+p {
+  color: orange;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.active {
+  background-color: orange;
+}

@@ -1,0 +1,66 @@
+.hero-section {
+    background-color: blue;
+    color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.explore-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.signup-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+}
+
+.hero-image {
+    background-image: url('./bike1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 30px; /* Adjust the margin-top value as needed */
+    }
+}
