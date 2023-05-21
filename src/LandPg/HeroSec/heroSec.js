@@ -14,7 +14,7 @@ const HeroSection = () => (
           Explore Courses
         </button>
         <button type="button" className="signup-button">
-          Sign Up for Updates
+          Sign Up for Update
         </button>
       </div>
     </div>
